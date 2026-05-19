@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Miguel Angel Fajardo Turner | CV Proposal</title>
+    <meta
+      name="description"
+      content="Canva-inspired CV proposal with sidebar layout and modular sections for professional experience, projects, and education."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="author" content="Miguel Angel Fajardo Turner" />
+    <link rel="canonical" href="https://example.com/WebCV/" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content-root">Skip to main content</a>
+
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Profile Sidebar">
+        <div class="sidebar-card profile-card">
+          <p class="sidebar-kicker">Professional Profile</p>
+          <img
+            class="sidebar-photo"
+            src="./assets/images/cv_photo.jpeg"
+            alt="Portrait of Miguel Angel Fajardo Turner"
+            loading="eager"
+            decoding="async"
+          />
+          <h1 class="sidebar-name">Miguel Angel Fajardo Turner</h1>
+          <p class="sidebar-role">Principal .NET Software Architect</p>
+          <p class="sidebar-focus">Distributed Systems · Cloud Platforms · Agile Leadership</p>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+            <i id="theme-toggle-icon" class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i>
+            <span id="theme-toggle-label">Theme: Auto</span>
+          </button>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Section navigation">
+          <a class="sidebar-link" href="#summary">Executive Summary</a>
+          <a class="sidebar-link" href="#experience">Experience</a>
+          <div class="sidebar-link-group" id="projects-link-group">
+            <a class="sidebar-link" id="projects-link" href="#projects">Personal Projects</a>
+            <div class="sidebar-subnav">
+              <a class="sidebar-sublink" href="#project-mm-api">1. MM-2026-Api</a>
+              <a class="sidebar-sublink" href="#project-mm-backoffice">2. MM-Web-BackOffice</a>
+              <a class="sidebar-sublink" href="#project-mm-web">3. MM-2026-Web</a>
+              <a class="sidebar-sublink" href="#project-ffxi-atlas">4. Electron-FFXI-Atlas</a>
+              <a class="sidebar-sublink" href="#project-eegviewer">5. electron-eegviewer</a>
+            </div>
+          </div>
+          <a class="sidebar-link" href="#education">Education</a>
+          <a class="sidebar-link" href="#achievements">Achievements</a>
+        </nav>
+
+        <section class="sidebar-card sidebar-contact" aria-label="Contact">
+          <h2 class="h6 mb-2">Contact</h2>
+          <p class="mb-1"><strong>Email:</strong> <a href="mailto:miguel.fajardotr@outlook.com">miguel.fajardotr@outlook.com</a></p>
+          <p class="mb-2"><strong>Location:</strong> Mexico City, Mexico</p>
+          <ul class="social-list mb-0" aria-label="Social links">
+            <li>
+              <a href="https://github.com/miguelstrife" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/miguelft" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://x.com/miguelstrife" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i> X (@miguelstrife)</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/miguelstrife/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram (@miguelstrife)</a>
+            </li>
+            <li>
+              <span><i class="fa-brands fa-discord" aria-hidden="true"></i> Discord: miguelstrife</span>
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+      <main id="content-root" class="content-area" aria-live="polite"></main>
+    </div>
+
+    <footer class="footer-note">© <span id="year">2026</span> Miguel Angel Fajardo Turner</footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Miguel Angel Fajardo Turner",
+        "jobTitle": "Principal .NET Software Architect",
+        "email": "mailto:miguel.fajardotr@outlook.com",
+        "url": "https://example.com/WebCV/",
+        "sameAs": [
+          "https://github.com/miguelstrife",
+          "https://www.linkedin.com/in/miguelft",
+          "https://x.com/miguelstrife",
+          "https://www.instagram.com/miguelstrife/"
+        ]
+      }
+    </script>
+  </body>
+</html>

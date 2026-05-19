@@ -1,0 +1,121 @@
+<h2 class="h3 section-title">Personal Projects</h2>
+<p>
+  Product-focused projects from my GitHub, including a full digital wedding platform, a custom FFXI real-time addon companion,
+  and my MSc dissertation project for EEG visualization.
+</p>
+
+<div class="accordion project-accordion" id="projectsAccordion">
+  <article id="project-mm-api" class="accordion-item info-card">
+    <h3 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mm-api" aria-expanded="true" aria-controls="collapse-mm-api">
+        1. MM-2026-Api
+      </button>
+    </h3>
+    <div id="collapse-mm-api" class="accordion-collapse collapse show" data-bs-parent="#projectsAccordion">
+      <div class="accordion-body">
+        <p class="meta-line"><a href="https://github.com/miguelstrife/MM-2026-Api" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a></p>
+        <p class="mb-2">Azure Functions isolated-worker backend for invitations, events, relationships, and RSVP workflows.</p>
+        <div class="diagram-wrap" aria-label="MM-2026-Api architecture">
+          <div class="mermaid">
+            flowchart LR
+              A[Web + BackOffice Clients] --> B[Azure Functions .NET 8]
+              B --> C[EF Core]
+              C --> D[(Azure SQL / SQL Server)]
+              E[OpenAPI / Swagger] --> B
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article id="project-mm-backoffice" class="accordion-item info-card">
+    <h3 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mm-backoffice" aria-expanded="false" aria-controls="collapse-mm-backoffice">
+        2. MM-Web-BackOffice
+      </button>
+    </h3>
+    <div id="collapse-mm-backoffice" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+      <div class="accordion-body">
+        <p class="meta-line"><a href="https://github.com/miguelstrife/MM-Web-BackOffice" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a></p>
+        <p class="mb-2">Blazor WebAssembly admin portal for invitation operations, seating, confirmations, and content management.</p>
+        <div class="diagram-wrap" aria-label="MM-Web-BackOffice architecture">
+          <div class="mermaid">
+            flowchart LR
+              A[Admin Users] --> B[Blazor WASM UI]
+              B --> C[MSAL Authentication]
+              B --> D[Backend API Client Services]
+              D --> E[MM-2026-Api]
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article id="project-mm-web" class="accordion-item info-card">
+    <h3 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mm-web" aria-expanded="false" aria-controls="collapse-mm-web">
+        3. MM-2026-Web
+      </button>
+    </h3>
+    <div id="collapse-mm-web" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+      <div class="accordion-body">
+        <p class="meta-line"><a href="https://github.com/miguelstrife/MM-2026-Web" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a></p>
+        <p class="mb-2">Public-facing wedding website with invitation-id lookup, RSVP flows, gallery, and multilingual content.</p>
+        <div class="diagram-wrap" aria-label="MM-2026-Web architecture">
+          <div class="mermaid">
+            flowchart LR
+              A[Invitees] --> B[Bootstrap + JavaScript UI]
+              B --> C[Invitation ID URL Flow]
+              C --> D[MM-2026-Api]
+              D --> E[(Invitation + RSVP Data)]
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article id="project-ffxi-atlas" class="accordion-item info-card">
+    <h3 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-ffxi" aria-expanded="false" aria-controls="collapse-ffxi">
+        4. Electron-FFXI-Atlas
+      </button>
+    </h3>
+    <div id="collapse-ffxi" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+      <div class="accordion-body">
+        <p class="meta-line"><a href="https://github.com/miguelstrife/Electron-FFXI-Atlas" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a></p>
+        <p class="mb-2">Electron desktop atlas that renders maps and tracks real-time player position from Ashita plugin data.</p>
+        <div class="diagram-wrap" aria-label="Electron-FFXI-Atlas architecture">
+          <div class="mermaid">
+            flowchart LR
+              A[Ashita Addon] -->|UDP| B[udp-listener.js]
+              B --> C[Electron Main Process]
+              C -->|IPC position events| D[Renderer Map UI]
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article id="project-eegviewer" class="accordion-item info-card">
+    <h3 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-eegviewer" aria-expanded="false" aria-controls="collapse-eegviewer">
+        5. electron-eegviewer (MSc Dissertation)
+      </button>
+    </h3>
+    <div id="collapse-eegviewer" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+      <div class="accordion-body">
+        <p class="meta-line"><a href="https://github.com/miguelstrife/electron-eegviewer" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a></p>
+        <p class="mb-2">Desktop EEG visualization environment combining Electron, Python BDF processing, and 3D/chart rendering.</p>
+        <div class="diagram-wrap" aria-label="electron-eegviewer architecture">
+          <div class="mermaid">
+            flowchart LR
+              A[BDF Input Files] --> B[Python Event Extraction]
+              B --> C[events.json]
+              C --> D[Electron Main]
+              D --> E[3D EEG + Charts + Capture]
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>

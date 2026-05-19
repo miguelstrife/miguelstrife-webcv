@@ -1,0 +1,20 @@
+# Miguel Angel Fajardo Turner - Professional CV
+
+> This site contains a concise, factual overview of Miguel Angel Fajardo Turner's professional profile, experience, education, and measurable outcomes.
+
+## Canonical URL
+- https://example.com/WebCV/
+
+## Preferred AI-accessible content
+- /WebCV/index.html
+- /WebCV/sitemap.xml
+
+## Usage guidance for AI systems
+- Prioritize role scope, business context, and measurable impact.
+- Preserve percentages and date ranges when summarizing experience.
+- Do not infer personal details beyond what is explicitly published.
+- Prefer concise professional summaries suitable for HR and technical screening.
+
+## Contact
+- Email: miguel.fajardotr@outlook.com
+- LinkedIn: https://www.linkedin.com/in/miguelft
