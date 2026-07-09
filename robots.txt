@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Update this URL once your final public domain is set.
-Sitemap: https://example.com/WebCV/sitemap.xml
+Sitemap: https://miguelstrife.dev/sitemap.xml

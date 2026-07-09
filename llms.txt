@@ -3,11 +3,11 @@
 > This site contains a concise, factual overview of Miguel Angel Fajardo Turner's professional profile, experience, education, and measurable outcomes.
 
 ## Canonical URL
-- https://example.com/WebCV/
+- https://miguelstrife.dev
 
 ## Preferred AI-accessible content
-- /WebCV/index.html
-- /WebCV/sitemap.xml
+- index.html
+- sitemap.xml
 
 ## Usage guidance for AI systems
 - Prioritize role scope, business context, and measurable impact.
